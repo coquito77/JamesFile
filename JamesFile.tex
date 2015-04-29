@@ -1,5 +1,9 @@
 \documentclass[11pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
-\usepackage{rotating}
+\usepackage[bookmarks,bookmarksopen,bookmarksdepth=2]{hyperref} % for navigations thru links
+
+\usepackage{pdflscape} % for lanscape page
+\usepackage{url} % for the footnote url
+
 
 \oddsidemargin=.25in
 \evensidemargin=.25in
@@ -11,7 +15,7 @@
 \pagestyle{empty}
 
 \title{GIS enabled Hospital Readmissions Dashboard:
- Going beyond EMR – Patients "place" becomes clinically relevant\\
+ Going beyond EMR Patients ``place" becomes clinically relevant\\
 \smallskip
   \large RESOURCE REQUEST/IMPROVEMENT PLAN\\ }
 \author{James Martinez}
@@ -29,10 +33,10 @@ operations caused it to increase.
 
 \section{HANDLING INSTRUCTIONS}
 
-The title of this document is GIS enabled Hospital Readmissions Dashboard: Going beyond EMR – Patients "place" becomes clinically relevant – Resource Request/Improvement Plan.
+The title of this document is GIS enabled Hospital Readmissions Dashboard: Going beyond EMR  Patients ``place" becomes clinically relevant Resource Request/Improvement Plan.
 \paragraph{}
 
-The information gathered in this Resource Request/Improvement Plan is classified as ‘For Official Use Only’ and should be handled as sensitive information not to be disclosed. This document should be safeguarded, handled, transmitted, and stored in accordance with appropriate security directives.
+The information gathered in this Resource Request/Improvement Plan is classified as For Official Use Only and should be handled as sensitive information not to be disclosed. This document should be safeguarded, handled, transmitted, and stored in accordance with appropriate security directives.
 \paragraph{}
 Points of Contact
 \paragraph{}
@@ -87,7 +91,7 @@ The improvement plan for a Geographic Information System (GIS) enabled hospital 
 \paragraph{}
 The significance of the hospital readmissions improvement plan is aligned with the operational values of the agency and supports the overall mission and compliance mandates. The GIS enabled platform also gathers performance-based measures to support hospitals and complex reporting demands and time sensitive decision making processes necessary to intervene with complex patients. The absence of more complex GIS capabilities limits hospitals and in particular administrators, nurses and executives from making more informed decisions. 
 \paragraph{}
-Additionally, the lack of more powerful data analysis platforms to hospitals identify, monitor and measure quality processes over time and translation into meaningful information that will collectively and collaboratively help improve quality indicators and performance metrics warrants the need for a GIS resource and improvement plan. Moreover, the inability to perform analysis on complex data would limit the type of performance-based measures hospitals could realistically provide communities without considering patients "place" as a clinically relevant indicator.
+Additionally, the lack of more powerful data analysis platforms to hospitals identify, monitor and measure quality processes over time and translation into meaningful information that will collectively and collaboratively help improve quality indicators and performance metrics warrants the need for a GIS resource and improvement plan. Moreover, the inability to perform analysis on complex data would limit the type of performance-based measures hospitals could realistically provide communities without considering patients ``place" as a clinically relevant indicator.
 \paragraph{}
 The improvement plan focuses on four target capabilities that will help guide the development of a fully integrated, cost effective, person centered hospital readmissions reduction dashboard that helps ensures that all patient needs are met before they are released or return to the hospital for the same condition within 30-days of discharge as defined by the Centers for Medicare and Medicaid Services (CMS).
 \paragraph{}
@@ -117,10 +121,11 @@ nurses or care teams to follow-up on complex patients within 48 hours after disc
 \end{enumerate}
 \paragraph{}
 
-Centers for Medicare and Medicaid Services (CMS) is continually working on enhancing existing policy and performances on the readmission reduction plan through accountability, and, improving processes, quality of care, and the implementation of innovative new technology. The purpose of the resource request/ improvement plan using GIS technology for hospital readmissions is to analyze "place" as a limitation to health in some cases and identify strengths of existing systems to be maintained and built upon, identify potential areas for further improvement, and support development of corrective actions.
+Centers for Medicare and Medicaid Services (CMS) is continually working on enhancing existing policy and performances on the readmission reduction plan through accountability, and, improving processes, quality of care, and the implementation of innovative new technology. The purpose of the resource request/ improvement plan using GIS technology for hospital readmissions is to analyze ``place" as a limitation to health in some cases and identify strengths of existing systems to be maintained and built upon, identify potential areas for further improvement, and support development of corrective actions.
 
 \section{Test  Environment}
-The major strengths of Loma Linda University Medical Center (LLUMC) as the test environment were identified are as follows: They were ranked No. 1 for best hospital in the Inland Empire, which operates the region's only level 1 trauma center and the only children's hospital (U.S. News & World Report). With nearly, 900 beds, each year, more than 33,000 patients are admitted and roughly half a million are served through outpatients services and over 58,000 patients are evaluated by LLUMC emergency department. In addition, Loma Linda provides assistance in governance, accounting, and fund-raising for 32 other Adventist Health hospitals and 52 clinics in 13 countries. Loma Linda University also recognize the importance of "place matters" when it comes to one's health and creating GIS applications that are integrated with Electronic Health Records (EHRs) to help improve health and quality of life and policy and decision making. Loma Linda University Medical Center continues to seek ways to improve patient care and outcomes and a GIS enabled platform will support LLUMC executive leadership and unprecedented capabilities to identify patients in real-time that are admitted and readmitted within 30 days and enhance assessment capabilities and strategies to reduce 30-day readmission rates. This adoption makes LLUMC an ideal candidate to implement the hospital readmissions dashboard as a  prototype and evaluate the robustness of the improvement plan for each objective area and condition category groups (i.e. MI, HF, PN, COPD and THA/TKA).
+The major strengths of Loma Linda University Medical Center (LLUMC) as the test environment were identified are as follows: They were ranked No. 1 for best hospital in the Inland Empire, which operates the region's only level 1 trauma center and the only children's hospital (U.S. News & World Report)\footnote{\url{http://health.usnews.com/best-hospitals/area/riverside-san-bernardino-ca}}. With nearly, 900 beds, each year, more than 33,000 patients are admitted and roughly half a million are served through outpatients services and over 58,000 patients are evaluated by LLUMC emergency department. In addition, Loma Linda provides assistance in governance, accounting, and fund-raising for 32 other Adventist Health hospitals and 52 clinics in 13 countries. Loma Linda University also recognize the importance of ``place matters" when it comes to one's health and creating GIS applications that are integrated with Electronic Health Records (EHRs) to help improve health and quality of life and policy and decision making\footnote{\url{http://www.esri.com/news/arcnews/fall07articles/loma-linda.html}}. Loma Linda University Medical Center continues to seek ways to improve patient care and outcomes and a GIS enabled platform will support LLUMC executive leadership and unprecedented capabilities to identify patients in real-time that are admitted and readmitted within 30 days and enhance assessment capabilities and strategies to reduce 30-day readmission rates. This adoption makes LLUMC an ideal candidate to implement the hospital readmissions dashboard as a  prototype and evaluate the robustness of the improvement plan for each objective area and condition category groups (i.e. MI, HF, PN, COPD and THA/TKA).
+
 
 \section{Primary Initiatives}
 
@@ -135,13 +140,13 @@ The primary aim of developing the improvement plan and research is guided by Aff
 \item Elective hip and knee replacements (THA/TKA)
 \end{itemize}
 
-The  research question surrounding the development of a readmissions dashboard is not based on replacing current systems but rather the question of the integration of Electronic Health Records (EHRs) and "how can a readmissions dashboard help hospitals comply with ACA policies, improve patient care and avoid preventable reimbursement penalties?" This will involve a visualization plan and rigorous evaluation of capabilities, including real-time data feeds for all hospital admissions and readmissions for the six conditions (i.e. AMI, HF, PN, COPD, THA/TKA) and routing for transitional care nurses that follow-up with patients after they are discharged. Patients at-risk for hospital readmission also benefit from the implementation plan that is patient focused because nurses and case managers will have the ability to addresses concerns in regards to patient follow-up appointments and patient comprehension of discharge and medication instructions.
+The  research question surrounding the development of a readmissions dashboard is not based on replacing current systems but rather the question of the integration of Electronic Health Records (EHRs) and ``how can a readmissions dashboard help hospitals comply with ACA policies, improve patient care and avoid preventable reimbursement penalties?" This will involve a visualization plan and rigorous evaluation of capabilities, including real-time data feeds for all hospital admissions and readmissions for the six conditions (i.e. AMI, HF, PN, COPD, THA/TKA) and routing for transitional care nurses that follow-up with patients after they are discharged. Patients at-risk for hospital readmission also benefit from the implementation plan that is patient focused because nurses and case managers will have the ability to addresses concerns in regards to patient follow-up appointments and patient comprehension of discharge and medication instructions.
 \paragraph{}
 The implementation plan will have several development and evaluation phases to assess the intended purpose for the application and system integration factors. Phase one includes two main functionalities. The first is by establishing a real-time linkage for spatially enabled hospital admissions data feeds of selected ICD and DRG codes. This will enable the dashboard to identify risk patients with an index admission and readmissions to the hospital and project details about their condition, vitals and demographics. The second functionality of phase one is to include routing capabilities for nurses and case managers to follow-up on patients based on readmission risks and clinical need after discharge from the hospital. 
 \paragraph{}
-In addition, to the improvement plan, phase 2 will enhance capabilities for a more robust platform to improve patient care at arrival and discharge from the hospital. This will also provide further capabilities for other questions regarding "what happens to patients prior to admission, during hospitalization and after discharge? " The platform will require further development of a fully integrated JavaScript application with linkages to community overlays by census tract, service areas, political boundaries, zip code and other assets, such as support groups, pharmacies and other lifestyle resources. The final phase of development will include building on the lessons learned through usability analysis from selected test environments and recommended settings for integrating Electronic Health Records (EHRs), hospital index admission and readmission measures, including transitions after discharge from the hospital.
+In addition, to the improvement plan, phase 2 will enhance capabilities for a more robust platform to improve patient care at arrival and discharge from the hospital. This will also provide further capabilities for other questions regarding ``what happens to patients prior to admission, during hospitalization and after discharge? " The platform will require further development of a fully integrated JavaScript application with linkages to community overlays by census tract, service areas, political boundaries, zip code and other assets, such as support groups, pharmacies and other lifestyle resources. The final phase of development will include building on the lessons learned through usability analysis from selected test environments and recommended settings for integrating Electronic Health Records (EHRs), hospital index admission and readmission measures, including transitions after discharge from the hospital.
 
-\section{Primary InitiativesBUSINESS OVERVIEW}
+\section{BUSINESS OVERVIEW}
 Costs of Readmissions
 \paragraph{}
 The AHRQ summary breakdown for 30-day readmissions by payer is as follows:
@@ -157,26 +162,36 @@ The AHRQ summary breakdown for 30-day readmissions by payer is as follows:
 \item	Hospitals affected 2013 (2,225/5,700):	\$227 million
 \item		Loma Linda University MC .24\%: 		\$25 million
 \begin{itemize}
-Primary Areas for Improvement
+Primary Areas for Improvement please refer to Figure ~\ref{fig:FirstGraph}
 
 
 \begin{figure}[ht!]
     \centering
 		  % trim the pic and resize it trim: Left, Bottom, Right
-    \includegraphics[trim = 40mm 1mm 2mm 10mm, clip, width=15cm, height=10cm]{C:/Users/E551910/Downloads/JamesFile/JamesFile/graph1.jpg}
+    \includegraphics[trim = 40mm 1mm 40mm 10mm, clip, width=12cm, height=8cm]{C:/Users/E551910/Downloads/JamesFile/JamesFile/graph1.jpg}
     \caption{Number of Days from Discharge to Readmission for All Discharge Setting}
     \label{fig:FirstGraph}
 \end{figure}
 
 \newpage
+\clearpage
 
-\section{Needs Assessment}
-Costs of Readmissions
-\paragraph{}
+\begin{figure}[t]  % place on top of page
+    \centering
+		  % trim the pic and resize it trim: Left, Bottom, Right
+    \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=15cm, height=10cm]{C:/Users/E551910/Downloads/JamesFile/JamesFile/graph2.jpg}
+    \caption{All-Cause 30-Day Readmission Rates}
+    \label{fig:AllCause30DaysAdminRate}
+\end{figure}
+
+
+\clearpage
+\newpage
+\begin{landscape}
 
 % latex table generated in R 3.1.3 by xtable 1.7-4 package
 % Tue Apr 28 15:54:38 2015
-\begin{sidewaystable}[ht]
+\begin{table}[h]
 \centering
 \begin{tabular}{lp{3cm}p{3cm}p{4cm}rlrrrp{5cm}}
   \hline
@@ -193,7 +208,77 @@ Costs of Readmissions
 \end{tabular}
 \caption{Software and System Implementation}
     \label{tbl:FirstTable}
-\end{sidewaystable}
+\end{table}
+
+\end{landscape}
+
+\clearpage
+\newpage
+
+\section{Needs Assessment}
+Costs of Readmissions
+\paragraph{}
+
+
+\section{Business Plan Overview}
+
+Loma Linda University Medical Center is a well-respected hospital and is the only level one regional trauma center for the Inland Empire. This also includes serving neighboring Inyo and Mono Counties. Unfortunately, compliance is an issue and preventable readmissions with better GIS capabilities and analysis will improve performances. In 2013, LLUH was penalized and was not reimbursed for claims totaling over \$2 million dollars in liquidated damages. The first six months of the current year follows a similar trend from Jan to June, 2014. The current processes still do not include effective GIS planning and analysis. The current infrastructure is based only on their EHR system by Epic. The implementation plan for integrating a readmissions dashboard  with a care management component that follows up on patients after discharge will be a major solution to avoiding preventable readmission penalties. The problem with their existing technology is that it might be out dated and perhaps, ineffective to support the population changes, and demands, particularly in the high desert region. Please referr to Table~\ref{tbl:NewBudget}
+
+\subsection{Initial GIS Plan Funding}
+
+
+% latex table generated in R 3.1.3 by xtable 1.7-4 package
+% Wed Apr 29 08:45:43 2015
+\begin{table}[!h]
+\centering
+\begin{tabular}{rlr}
+  \hline
+ & DESCRIPTION & Year 2014 \\ 
+  \hline
+1 & GIS Evaluation and Data Entry & 4,035 \\ 
+  2 & GIS Integration with EHR systems & 17,493 \\ 
+  3 & GIS Design, Development and Implementation & 14,969 \\ 
+  4 & GIS Materials, Integration, Printing and Production & 5,784 \\ 
+  5 & GIS Software, Licenses and Services & 23,516 \\ 
+  6 & GIS Data Warehouse, Server Maintenance & 4,210 \\ 
+  7 & Agency Fee (9.5\%)  & 18,594 \\ 
+  8 & Miscellaneous expenses & 9,426 \\ 
+  9 & TOTAL BUDGET & 11,1148 \\ 
+   \hline
+\end{tabular}
+\caption{New Budget}
+    \label{tbl:NewBudget}
+\end{table}
+
+
+
+\subsection{The Porters Five Forces}
+
+The software industry is in constant state of flux or is easily stirred, given the continuous and relentless improvements in software languages, hardware, and/or network capabilities.
+When it comes to the five industry forces, the industry's threat of entry force offers a moderate unfavorable condition. The economies of scale are the most favorable dimension in this force. However, established companies have increased the entry into this industry. For the supplier power dimension, the industry has a moderately favorable condition given that the raw materials, namely class schedule and program data, may not be costly to obtain. In addition, qualified programmers may be difficult to locate, especially locally. In the realm of buyer power, the industry tilts this market force into the moderately favorable area given that there are no academic planner applications that offer the same benefits or have the same features. The application buyers are deemed to be sophisticated enough to demand more benefits from the application than originally planned. This is the case with the existing program they are using. In the area of threat of suppliers, the hospital industry has a moderately unfavorable condition. Private companies have the option to buy the GIS application or to develop their response plans by trial and error by doing them manually using their own CAD systems by Intergraph. The competitive rivalry assessment results are highly unfavorable, given the intangible product's attributes, and the relative visible pricing schemes that software applications have.
+\paragraph{}
+Although some of the of the Porter's five industry assessments are not favorable the overall assessment is moderately favorable because the industry offers increasing (or high) economies of scale once the GIS Business Plan is developed and launched. Nevertheless, the continuous changes in the several factors in the industry, software, hardware need to be managed effectively and creatively so that they do not become a liability or a risk.
+\paragraph{}
+In terms of the current target market is the changing communities in the county's population and density within San Bernardino. There are more than 2 million with a population density estimated at 103 persons per square mile of the 20,000 square miles of land; however, the once rural desert and suburban regions have developed and includes over 93\% of the county's land area and parts of the Mojave Desert.
+
+% latex table generated in R 3.1.3 by xtable 1.7-4 package
+% Wed Apr 29 09:01:54 2015
+\begin{table}[t!]
+\centering
+\begin{tabular}{rrrrrrrr{1cm}}
+  \hline
+ & Year & Rancho & Redlands & Victorville & Size of Market & Percent & Total Market \\ 
+  \hline
+1 & 2012 & 19,278 & 30,682 & 80,914 & 130,875 & 58,894 & 47,115 \\ 
+  2 & 2013 & 21,993 & 33,941 & 83,086 & 139,020 & 62,559 & 50,047 \\ 
+  3 & 2014 & 21,179 & 35,570 & 86,345 & 143,093 & 64,392 & 51,514 \\ 
+  4 & 2015 & 20,636 & 33,669 & 84,172 & 138,477 & 62,315 & 49,852 \\ 
+   \hline
+\end{tabular}
+\caption{Estimated market Size}
+    \label{tbl:Estimated market size}
+\end{table}
+
 
 
 \end{document}
